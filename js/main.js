@@ -28,21 +28,13 @@ const biciclette = [
 ];
 
 
-//forEach per ciclare tutti gli objects
 
-biciclette.forEach((element, index) => {
-    const {nome, peso} = element;
-    let dati =[nome,peso];
-    if(dati[1] == element[index]['peso']){
-        dati = [nome, peso];
-        console.log(...dati);
-    }else{
+//ciclo for per ciclare ogni oggetto e creare
+for(i = 0; i < biciclette.length; i++){
+    let bici = biciclette[i];
+    const {nome,peso} = bici;
+}
 
-        // console.log(...dati);
-    }
-    // console.log(...dati);
-    
-});
 
 //estrapoliamo 3 variabili con il deconstruct usando un ciclo
 
