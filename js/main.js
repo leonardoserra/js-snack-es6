@@ -87,7 +87,22 @@ const squadre = [
 ];
 
 
+squadre.forEach((element)=>{
+    element.punti = randomNumberGen(10);
+    element.falli = randomNumberGen(5);
+    const {nome,falli} = element;
+    console.log(`la squadra ${nome} ha subito ${falli} falli!`)
+});
 
+
+
+
+
+//funzioni
+function randomNumberGen(max){
+    const randomNumber = Math.floor(Math.random() * max);
+    return randomNumber;
+}
 
 
 /*
