@@ -32,8 +32,16 @@ const biciclette = [
 
 biciclette.forEach((element, index) => {
     const {nome, peso} = element;
-    console.log(nome,peso);
+    let dati =[nome,peso];
+    if(dati[1] == element[index]['peso']){
+        dati = [nome, peso];
+        console.log(...dati);
+    }else{
 
+        // console.log(...dati);
+    }
+    // console.log(...dati);
+    
 });
 
 //estrapoliamo 3 variabili con il deconstruct usando un ciclo
