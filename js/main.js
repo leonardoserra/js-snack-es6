@@ -116,10 +116,17 @@ function randomNumberGen(max){
 */
 
 const gelati = ['fragola', 'pistacchio', 'liquirizia', 'limone', 'cioccolato'];
+let gelatiScelti = [];
+
+gelati.forEach((element) =>{
+    element = fascia(gelati, 1, 3);
+    gelatiScelti = element;
+});
+
+console.log(gelatiScelti);
 
 
-
-console.log(fascia(gelati, 1, 3));
+// console.log(fascia(gelati, 1, 3));
 
 //funzione bonus
 function fascia(array, startIndex, endIndex){
@@ -132,6 +139,5 @@ function fascia(array, startIndex, endIndex){
     newArray.push(array[endIndex]);
 
     return newArray;
-
 
 }
