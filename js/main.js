@@ -98,10 +98,6 @@ squadre.forEach((element)=>{
 });
 
 
-
-
-
-
 //funzioni
 function randomNumberGen(max){
     const randomNumber = Math.floor(Math.random() * max);
@@ -119,5 +115,23 @@ function randomNumberGen(max){
         Usiamo i nuovi metodi degli array foreach o filter.
 */
 
+const gelati = ['fragola', 'pistacchio', 'liquirizia', 'limone', 'cioccolato'];
 
 
+
+console.log(fascia(gelati, 1, 3));
+
+//funzione bonus
+function fascia(array, startIndex, endIndex){
+    let newArray = [];
+
+    while(startIndex != endIndex){
+        newArray.push(array[startIndex]);
+        startIndex++;
+    }
+    newArray.push(array[endIndex]);
+
+    return newArray;
+
+
+}
