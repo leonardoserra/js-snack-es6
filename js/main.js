@@ -30,12 +30,12 @@ const biciclette = [
     {
         nome:'Atala',
         peso: 10
-    }
+    },
 
     {
         nome:'Cipollini',
         peso: 12
-    }
+    },
 
     {
         nome:'Pinarello',
