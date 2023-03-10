@@ -24,3 +24,21 @@
         Usiamo i nuovi metodi degli array foreach o filter.
 */
 
+
+//creato array di objects
+const biciclette = [
+    {
+        nome:'Atala',
+        peso: 10
+    }
+
+    {
+        nome:'Cipollini',
+        peso: 12
+    }
+
+    {
+        nome:'Pinarello',
+        peso: 8
+    }
+]
