@@ -41,4 +41,13 @@ const biciclette = [
         nome:'Pinarello',
         peso: 8
     }
-]
+];
+
+//estrapoliamo 3 variabili con il deconstruct usando un ciclo
+//forEach per ciclare tutti gli objects
+
+const pesiBici = biciclette.map((object) => {
+    return object.peso;
+});
+
+console.log(pesiBici);
