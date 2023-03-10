@@ -30,10 +30,15 @@ const biciclette = [
 
 
 //ciclo for per ciclare ogni oggetto e creare
+let biciLeggera = biciclette[0];
 for(i = 0; i < biciclette.length; i++){
     let bici = biciclette[i];
-    const {nome,peso} = bici;
+    if(bici.peso < biciLeggera.peso){
+        biciLeggera = bici;
+    }
 }
+const {nome,peso} = biciLeggera;
+console.log(`la bici piû leggera é la ${nome} e pesa ${peso}`)
 
 
 //estrapoliamo 3 variabili con il deconstruct usando un ciclo
