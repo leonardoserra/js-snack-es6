@@ -51,7 +51,5 @@ const pesiBici = biciclette.map((object) => {
 });
 console.log(pesiBici);
 
-pesiBici.forEach((element, index) =>{
-    let minorPeso = element[index];
-    minorPeso = minorPeso>element[index]? minorPeso=element[index]: console.log(element[index]);
-})
+//uso spread per "aprire" pesiBici e con Math.min verifico quale sia il piu piccolo
+console.log(Math.min(...pesiBici));
