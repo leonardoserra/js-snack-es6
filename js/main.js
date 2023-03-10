@@ -5,24 +5,8 @@
                 seguenti proprietà: nome e peso.
             Stampare a schermo la bici con peso minore utilizzando
                 destructuring e template literal
-    Snack2
-        Creare un array di oggetti di squadre di calcio.
-            Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
-            Nome sarà l’unica proprietà da compilare, le altre
-                saranno tutte settate a 0.
-            Generare numeri random al posto degli 0 nelle
-                proprietà: Punti fatti e falli subiti.
-            Infine usando la destrutturazione creiamo un nuovo 
-                array i cui elementi contengono solo nomi e falli 
-                subiti e stampiamo tutto in console.
-    BONUS
-    Snack 3
-        Scrivere una funzione che accetti tre argomenti, un
-            array e due numeri (a più piccolo di b).
-        La funzione ritornerà un nuovo array con i valori che
-            hanno la posizione compresa tra i due numeri.
-        Usiamo i nuovi metodi degli array foreach o filter.
 */
+
 
 
 //creato array di objects
@@ -43,13 +27,50 @@ const biciclette = [
     }
 ];
 
-//estrapoliamo 3 variabili con il deconstruct usando un ciclo
+
 //forEach per ciclare tutti gli objects
 
-const pesiBici = biciclette.map((object) => {
-    return object.peso;
+biciclette.forEach((element, index) => {
+    const {nome, peso} = element;
+    console.log(nome,peso);
+
 });
-console.log(pesiBici);
+
+//estrapoliamo 3 variabili con il deconstruct usando un ciclo
+
+// const pesiBici = biciclette.map((object) => {
+//     return object.peso;
+// });
+// console.log(pesiBici);
 
 //uso spread per "aprire" pesiBici e con Math.min verifico quale sia il piu piccolo
-console.log(Math.min(...pesiBici));
+// console.log(Math.min(...pesiBici));
+
+
+
+
+
+
+
+/*
+    Snack2
+        Creare un array di oggetti di squadre di calcio.
+            Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+            Nome sarà l’unica proprietà da compilare, le altre
+                saranno tutte settate a 0.
+            Generare numeri random al posto degli 0 nelle
+                proprietà: Punti fatti e falli subiti.
+            Infine usando la destrutturazione creiamo un nuovo 
+                array i cui elementi contengono solo nomi e falli 
+                subiti e stampiamo tutto in console.
+    BONUS
+    Snack 3
+        Scrivere una funzione che accetti tre argomenti, un
+            array e due numeri (a più piccolo di b).
+        La funzione ritornerà un nuovo array con i valori che
+            hanno la posizione compresa tra i due numeri.
+        Usiamo i nuovi metodi degli array foreach o filter.
+*/
+
+
+
