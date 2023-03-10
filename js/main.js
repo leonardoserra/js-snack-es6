@@ -53,10 +53,6 @@ console.log(`la bici piû leggera é la ${nome} e pesa ${peso}`)
 
 
 
-
-
-
-
 /*
     Snack2
         Creare un array di oggetti di squadre di calcio.
@@ -68,6 +64,33 @@ console.log(`la bici piû leggera é la ${nome} e pesa ${peso}`)
             Infine usando la destrutturazione creiamo un nuovo 
                 array i cui elementi contengono solo nomi e falli 
                 subiti e stampiamo tutto in console.
+*/
+
+const squadre = [
+    {
+        nome:'juve',
+        punti: 0,
+        falli: 0
+    },
+
+    {
+        nome:'inter',
+        punti: 0,
+        falli: 0
+    },
+
+    {
+        nome:'milan',
+        punti: 0,
+        falli: 0
+    }
+];
+
+
+
+
+
+/*
     BONUS
     Snack 3
         Scrivere una funzione che accetti tre argomenti, un
