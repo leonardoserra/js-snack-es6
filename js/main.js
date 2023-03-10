@@ -49,5 +49,9 @@ const biciclette = [
 const pesiBici = biciclette.map((object) => {
     return object.peso;
 });
-
 console.log(pesiBici);
+
+pesiBici.forEach((element, index) =>{
+    let minorPeso = element[index];
+    minorPeso = minorPeso>element[index]? minorPeso=element[index]: console.log(element[index]);
+})
