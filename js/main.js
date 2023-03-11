@@ -111,7 +111,12 @@ function randomNumberGen(max){
 
 const gelati = ['fragola', 'pistacchio', 'liquirizia', 'limone', 'cioccolato'];
 
-const gelatiSelezionati = gelati.filter(gelato => gelato == fascia(gelati, 1, 3));
+const gelatiSelezionati = gelati.filter(gelato => {
+    
+    // const arrayGelati =  fascia(gelati, 1, 3);
+    return fascia(gelati, 1, 3).includes(gelato);
+    // return arrayGelati.includes(gelato);
+});
 
 console.log(gelatiSelezionati);
 // let gelatiScelti = [];
@@ -127,24 +132,18 @@ console.log(gelatiSelezionati);
 // console.log(fascia(gelati, 1, 3));
 
 //funzione bonus
+
+
+
 function fascia(array, startIndex, endIndex){
     let newArray = [];
-    for(i = startIndex; i < endIndex; i++){
-        array.push(array[i]);
+
+    while(startIndex != endIndex){
+        newArray.push(array[startIndex]);
+        startIndex++;
     }
+    newArray.push(array[endIndex]);
+
     return newArray;
+
 }
-
-
-// function fascia(array, startIndex, endIndex){
-//     let newArray = [];
-
-//     while(startIndex != endIndex){
-//         newArray.push(array[startIndex]);
-//         startIndex++;
-//     }
-//     newArray.push(array[endIndex]);
-
-//     return newArray;
-
-// }
