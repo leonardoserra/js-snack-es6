@@ -106,32 +106,51 @@ function randomNumberGen(max){
             array e due numeri (a più piccolo di b).
         La funzione ritornerà un nuovo array con i valori che
             hanno la posizione compresa tra i due numeri.
-        Usiamo i nuovi metodi degli array foreach o filter.
+        Usiamo i nuovi metodi degli array forEach o filter.
 */
 
 const gelati = ['fragola', 'pistacchio', 'liquirizia', 'limone', 'cioccolato'];
-let gelatiScelti = [];
 
-gelati.forEach((element) =>{
-    element = fascia(gelati, 1, 3);
-    gelatiScelti = element;
-});
+const gelatiSelezionati = gelati.filter(gelato => gelato == fascia(gelati, 1, 3));
 
-console.log(gelatiScelti);
+console.log(gelatiSelezionati);
+// let gelatiScelti = [];
+
+// gelati.forEach((element) =>{
+//     element = fascia(gelati, 1, 3);
+//     gelatiScelti = element;
+// });
+
+// console.log(gelatiScelti);
 
 
 // console.log(fascia(gelati, 1, 3));
 
 //funzione bonus
 function fascia(array, startIndex, endIndex){
-    let newArray = [];
+    let gusto;
 
     while(startIndex != endIndex){
-        newArray.push(array[startIndex]);
+        
+        gusto = array[startIndex];
         startIndex++;
+        // return gusto;
     }
-    newArray.push(array[endIndex]);
+    gusto = array[endIndex];
 
-    return newArray;
+    return gusto;
 
 }
+
+// function fascia(array, startIndex, endIndex){
+//     let newArray = [];
+
+//     while(startIndex != endIndex){
+//         newArray.push(array[startIndex]);
+//         startIndex++;
+//     }
+//     newArray.push(array[endIndex]);
+
+//     return newArray;
+
+// }
