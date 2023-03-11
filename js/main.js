@@ -77,12 +77,6 @@ const squadre = [
         nome:'inter',
         punti: 0,
         falli: 0
-    },
-
-    {
-        nome:'milan',
-        punti: 0,
-        falli: 0
     }
 ];
 
@@ -93,7 +87,7 @@ squadre.forEach((element)=>{
     let risultati = [];
     const {nome,falli} = element;
     risultati.push(nome,falli);
-    console.log(risultati);
+    // console.log(risultati);
     console.log(`la squadra ${nome} ha subito ${falli} falli!`);
 });
 
