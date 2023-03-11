@@ -128,19 +128,13 @@ console.log(gelatiSelezionati);
 
 //funzione bonus
 function fascia(array, startIndex, endIndex){
-    let gusto;
-
-    while(startIndex != endIndex){
-        
-        gusto = array[startIndex];
-        startIndex++;
-        // return gusto;
+    let newArray = [];
+    for(i = startIndex; i < endIndex; i++){
+        array.push(array[i]);
     }
-    gusto = array[endIndex];
-
-    return gusto;
-
+    return newArray;
 }
+
 
 // function fascia(array, startIndex, endIndex){
 //     let newArray = [];
