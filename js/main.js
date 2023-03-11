@@ -81,15 +81,15 @@ const squadre = [
 ];
 
 
-squadre.forEach((element)=>{
+let risultati = [];
+squadre.forEach((element, index)=>{
     element.punti = randomNumberGen(10);
     element.falli = randomNumberGen(5);
-    let risultati = [];
     const {nome,falli} = element;
     risultati.push(nome,falli);
-    // console.log(risultati);
-    console.log(`la squadra ${nome} ha subito ${falli} falli!`);
+    // console.log(`la squadra ${nome} ha subito ${falli} falli!`);
 });
+console.log(risultati);
 
 
 //funzioni
